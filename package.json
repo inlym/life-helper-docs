@@ -1,20 +1,16 @@
 {
   "name": "life-helper-guide",
   "version": "1.0.0",
-  "description": "小鸣AI官方文档",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
-  "keywords": [
-    "inlym",
-    "vue",
-    "vitepress"
-  ],
-  "author": "inlym",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.0.1"
   }
