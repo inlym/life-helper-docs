@@ -1,5 +1,7 @@
 # MySQL 数据库
 
+笔者在项目开发中，使用了 MySQL 作为主存储数据库，当前文档总结了笔者在开发过程中遵循的规范和一些新的体会。考虑到笔者的开发水平以及项目架构，部分经验并不一定适合读者，请在阅读时仔细甄别。
+
 ## 规范
 
 ### 字段
@@ -10,8 +12,8 @@
 
 ```sql
 CREATE TABLE `xxx` (
-	`id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键ID',
-	PRIMARY KEY (`id`)
+ `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+ PRIMARY KEY (`id`)
 )
 ```
 
