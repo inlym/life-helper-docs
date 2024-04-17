@@ -1,16 +1,16 @@
 {
   "name": "life-helper-guide",
   "version": "1.0.0",
-  "description": "",
+  "description": "WeUtil Project Document",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["life-helper","vitepress","vue"],
+  "author": "inlym",
+  "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.1"
   }
