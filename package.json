@@ -1,5 +1,5 @@
 {
-  "name": "life-helper-guide",
+  "name": "life-helper-docs",
   "version": "1.0.0",
   "description": "WeUtil Project Document",
   "main": "index.js",
@@ -8,10 +8,11 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "keywords": ["life-helper","vitepress","vue"],
+  "keywords": ["life-helper", "vitepress", "vue"],
   "author": "inlym",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.1"
+    "@biomejs/biome": "1.7.1",
+    "vitepress": "^1.1.4"
   }
 }
