@@ -55,7 +55,7 @@ CREATE TABLE `xxx` (
 
 ```sql
 CREATE TABLE `xxx_table` (
-  /* 下方是通用字段 */
+  /* 下方为通用字段 */
   `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键 ID',
   `create_time` datetime NOT NULL COMMENT '创建时间',
   `update_time` datetime NOT NULL COMMENT '更新时间',
@@ -64,12 +64,13 @@ CREATE TABLE `xxx_table` (
   `delete_time` datetime NULL COMMENT '删除时间（逻辑删除标志）',
   `version` int NOT NULL COMMENT '乐观锁（修改次数）',
 
-  /* 下方是修改为业务字段 */
+  /* 下方为业务字段 */
   `xxx_string_column` varchar(100) NOT NULL DEFAULT '' COMMENT '不定长字符串字段',
   `xxx_string2_column` char(32) NOT NULL DEFAULT '' COMMENT '定长字符串字段',
-  `xxx_datetime_column` datetime NOT NULL COMMENT '时间字段',
+  `xxx_datetime_column` datetime NOT NULL COMMENT '日期时间字段',
   `xxx_date_column` date NOT NULL COMMENT '日期字段',
   `xxx_time_column` time NOT NULL COMMENT '时间字段',
+  `xxx_long_column` bigint UNSIGNED NOT NULL COMMENT '长整型字段',
   `xxx_enum_column` tinyint NOT NULL COMMENT '枚举字段',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB
