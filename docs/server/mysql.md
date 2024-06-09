@@ -54,7 +54,7 @@ CREATE TABLE `xxx` (
 以下是通用建表语句：
 
 ```sql
-CREATE TABLE `xxx_table_name` (
+CREATE TABLE `xxx_table` (
   /* 下方是通用字段 */
   `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '主键 ID',
   `create_time` datetime NOT NULL COMMENT '创建时间',
@@ -69,11 +69,23 @@ CREATE TABLE `xxx_table_name` (
   `xxx_string2_column` char(32) NOT NULL DEFAULT '' COMMENT '定长字符串字段',
   `xxx_datetime_column` datetime NOT NULL COMMENT '时间字段',
   `xxx_date_column` date NOT NULL COMMENT '日期字段',
+  `xxx_time_column` time NOT NULL COMMENT '时间字段',
   `xxx_enum_column` tinyint NOT NULL COMMENT '枚举字段',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB
 DEFAULT CHARACTER SET=utf8mb4
 COMMENT='此处修改为表备注';
+```
+
+### 改表语句
+
+以下是通用插入字段语句：
+
+```sql
+ALTER TABLE `xxx_table`
+  ADD COLUMN `xxx_string_column` varchar(100) NOT NULL DEFAULT '' COMMENT '不定长字符串字段' AFTER `xxx_column`,
+  ADD COLUMN `xxx_string2_column` char(32) NOT NULL DEFAULT '' COMMENT '定长字符串字段' AFTER `xxx_string_column`
+;
 ```
 
 ## 操作指南
